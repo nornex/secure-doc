@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "postinstall": "electron scripts/update-version.js && (cd backend && electron-gyp.sh rebuild)"
   },
   "repository": {
     "type": "git",

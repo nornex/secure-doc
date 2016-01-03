@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "author": "Matt H <nornex@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-bridge": "^0.1.3"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.0.2"
+  },
+  "scripts": {
+    "preinstall": "./electron-gyp.sh rebuild"
+  }
+}

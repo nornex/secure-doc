@@ -1,0 +1,8 @@
+[package]
+name = "backend"
+version = "0.1.0"
+authors = ["Matt H <nornex@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+neon = "0.1"

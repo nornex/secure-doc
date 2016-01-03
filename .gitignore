@@ -1,1 +1,17 @@
+# Directories to ignore
 node_modules
+build
+target
+
+# Files to ignore
+binding.gyp
+Cargo.lock
+npm-debug.log
+
+# Auto generated
+electron-gyp.sh
+
+# Tmp files
+**/*~
+**/node_modules
+**/.DS_Store

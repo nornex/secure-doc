@@ -16,6 +16,9 @@ app.on('window-all-closed', function() {
   }
 });
 
+console.log("Testing...");
+require('backend/lib');
+
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 app.on('ready', function() {
@@ -23,7 +26,7 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({width: 800, height: 600});
 
   // and load the index.html of the app.
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
+  mainWindow.loadURL('file://' + __dirname + '/frontend/index.html');
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
